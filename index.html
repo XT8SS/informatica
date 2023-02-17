@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Juego Educativo</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./images/icon.png">
+    </head>
+    <body>
+
+        <canvas id="game"></canvas>
+        <div class="interfaceContainer" style="display: none;">
+            <div class="statContainer">
+                <div class="stat" id="streakContainer">Racha: <span id="streak">0</span></div>
+                <div class="stat" id="scoreContainer">Puntaje: <span id="score">0</span></div>
+            </div>
+            <img src="./images/titleBG.png" id="titleBG">
+            <div class="title"><span>El camino del</span><span>CONOCIMIENTO</span></div>
+            <div class="playText" align="center">Presione ENTER para comenzar</div>
+            <div class="button" id="htpButton">C&oacute;mo jugar</div>
+            <div class="button" id="infoButton">Informaci&oacute;n</div>
+            <div class="box" id="infoBox" align="center">
+                <img src="./images/schoolLogo.png" style="height: 17.5%; margin-bottom: 7.5%;" draggable="false">
+                <span style="margin-bottom: 5%;">Plantel Hermosillo V</span>
+                <span style="margin-bottom: 7.5%;">Inform&aacute;tica</span>
+                <span style="margin-bottom: 7.5%;">= Juego Educativo =</span>
+                <span style="margin-bottom: 5%;">Profesor Bernardino Huerta</span>
+                <span style="margin-bottom: 5%;">- Integrantes -<br>Herrera Armenta Emmanuel<br>Vindiola Oca&ntilde;o Omar Eduardo<br>Sotelo N&uacute;&ntilde;ez Edgardo</span>
+                <span style="margin-bottom: 5%;">Grupo 203M</span>
+                <span id="place">Hmo, Son</span>
+                <span id="date">17/Feb/23</span>
+            </div>
+            <div class="box" id="htpBox" align="center">
+                <span style="margin-bottom: 5%;">- Movimiento -</span>
+                <span style="margin-bottom: 2.5%;">Se puede mover con las flechas (&#129032; y &#129034;) o<br>como alternativa, A y D</span>
+                <span style="margin-bottom: 7.5%;">Las casillas <span style="color: purple">moradas</span> sirven para trasladarse entre las mismas cuando se presiona ESPACIO</span>
+                <span style="margin-bottom: 5%;">- Interacciones -</span>
+                <span style="margin-bottom: 2.5%;">Las casillas <span style="color: blue">azules</span> indican una interacción con diálogo al acercarse</span>
+                <span style="margin-bottom: 2.5%;">Para avanzar entre di&aacute;logos, se presiona ENTER</span>
+                <span style="margin-bottom: 7.5%;">Hacer CLICK en la opci&oacute;n que se crea correcta para seleccionarla</span>
+                <span style="margin-bottom: 5%;">- Puntaje -</span>
+                <span style="margin-bottom: 2.5%;">Cada respuesta correcta vale 50 puntos, y dependiendo de la racha, se obtendr&aacute; un mayor multiplicador de puntos</span>
+                <span style="margin-bottom: 2.5%;">Cada respuesta incorrecta restará del multiplicador de puntos, y se perderá la racha actual</span>
+                <span>Un mayor puntaje ser&aacute; de gran ayuda para la pregunta final, as&iacute; que hay que estar atento</span>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+
+    </body>
+</html>
